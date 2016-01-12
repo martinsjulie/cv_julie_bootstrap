@@ -33,6 +33,10 @@ body, .container-fluid, .row-fluid {
   font-size: 0.95em;
   font-weight: 900;
 }
+.onglets {
+  padding: 15% 5% 15% 15%;
+  opacity: 0.5;
+}
 .onglets a {
   color: white;
   text-decoration: none;
@@ -61,68 +65,6 @@ body, .container-fluid, .row-fluid {
 .row-fluid #works {
   /*height: 90%;*/
   /*padding: 20%;*/
-}
-.thumbnail {
-  border: 0;
-  background: none;
-}
-@media (min-width: 200px) and (max-width: 590px) {
-  #menu {
-    position: fixed;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 0px;
-    z-index: 5;
-    display: block;
-    margin-left: -45px;
-    /*padding: 17%;*/
-    /*height: 20px;*/
-  }
-  .onglets{
-    padding: 2% 2% 2% 2%;
-    opacity: 0.6;
-  }
-  .onglets a {
-    color: white;
-    text-decoration: none;
-  }
-  .onglets a img{
-      width: 5%;
-      /*float: right;*/
-  }
-}
-@media (min-width: 200px) and (max-width: 600px) {
-  .onglets{
-    opacity: 0.5;
-  }
-  .onglets a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  .row-fluid img {
-    width: 100%;
-  }
-}
-@media (min-width: 601px) and (max-width: 991px) {
-  #menu {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 0px;
-    /*padding: 17%;*/
-  }
-  .onglets{
-    opacity: 0.5;
-    width: 20%;
-    font-size: 11px;
-    padding: 1% 0% 1% 1%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1920px) {
-  .onglets{
-    padding: 15% 5% 15% 15%;
-    opacity: 0.5;
-  }
-
 }
 .col-md-4 {
   /*background-color: pink;*/
