@@ -85,6 +85,17 @@ body, .container-fluid, .row-fluid {
     /*padding: 17%;*/
     /*height: 20px;*/
   }
+  #menu {
+    display: none;
+  }
+  #petit-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0px;
+    font-size: 10px;
+    position: fixed;
+    z-index: 1;
+    /*padding: 17%;*/
+  }
   .onglets{
     padding: 2% 2% 2% 2%;
     opacity: 0.6;
@@ -99,10 +110,10 @@ body, .container-fluid, .row-fluid {
   }
   .icons img{
     margin-top: 10%;
-    width: 25%;
+    width: 80%;
   }
 }
-@media (min-width: 200px) and (max-width: 600px) {
+/*@media (min-width: 200px) and (max-width: 600px) {
   .onglets{
     opacity: 0.5;
   }
@@ -119,11 +130,16 @@ body, .container-fluid, .row-fluid {
     width: 75%;
     background-color: green;
   }
-}
-@media (min-width: 601px) and (max-width: 991px) {
+}*/
+@media (min-width: 591px) and (max-width: 991px) {
   #menu {
+    display: none;
+  }
+  #petit-menu {
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 0px;
+    position: fixed;
+    z-index: 1;
     /*padding: 17%;*/
   }
   .onglets{
@@ -139,9 +155,13 @@ body, .container-fluid, .row-fluid {
   }
 }
 @media (min-width: 992px) and (max-width: 1920px) {
+  #petit-menu {
+    display: none;
+  }
   .onglets{
     padding: 15% 5% 15% 15%;
     opacity: 0.5;
+    font-size: 11px;
   }
   .icons img{
     margin-top: 70%;
