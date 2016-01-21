@@ -15,10 +15,10 @@ body, .container-fluid, .row-fluid {
 .fixed {
   position: fixed;
 }
-#formation .col-md-4 {
-  opacity: 0.70;
+.col-xs-12, .col-sm-12, .col-md-4 {
+  opacity: 0.90;
 }
-#formation .col-md-4:hover {
+.col-xs-12:hover, .col-sm-12:hover, .col-md-4:hover {
   opacity: 1;
 }
 #formation .col-md-4 h5 , p , #works .col-md-4 h5 , p {
@@ -32,6 +32,12 @@ body, .container-fluid, .row-fluid {
 #formation .col-md-4 h5, #works .col-md-4 h5 {
   font-size: 0.95em;
   font-weight: 900;
+}
+/*#works .col-xs-12, .col-sm-12 {
+  opacity: 0.90;
+}*/
+#works .col-xs-12:hover, .col-sm-12:hover {
+  opacity: 1;
 }
 .onglets a {
   color: white;
@@ -57,6 +63,7 @@ body, .container-fluid, .row-fluid {
   font-size: 1.6em;
   margin: :5% 5% 5% 0%;
   padding: 2.5% 2.5% 2.5% 2.5%;
+  opacity: 1;
 }
 .row-fluid #works {
   /*height: 90%;*/
@@ -90,6 +97,10 @@ body, .container-fluid, .row-fluid {
       width: 5%;
       /*float: right;*/
   }
+  .icons img{
+    margin-top: 10%;
+    width: 25%;
+  }
 }
 @media (min-width: 200px) and (max-width: 600px) {
   .onglets{
@@ -102,6 +113,11 @@ body, .container-fluid, .row-fluid {
   }
   .row-fluid img {
     width: 100%;
+  }
+  .icons img{
+    margin-top: 70%;
+    width: 75%;
+    background-color: green;
   }
 }
 @media (min-width: 601px) and (max-width: 991px) {
@@ -116,13 +132,22 @@ body, .container-fluid, .row-fluid {
     font-size: 11px;
     padding: 1% 0% 1% 1%;
   }
+  .icons img{
+    margin-top: 70%;
+    width: 55%;
+    background-color: red;
+  }
 }
 @media (min-width: 992px) and (max-width: 1920px) {
   .onglets{
     padding: 15% 5% 15% 15%;
     opacity: 0.5;
   }
-
+  .icons img{
+    margin-top: 70%;
+    width: 45%;
+    background-color: black;
+  }
 }
 .col-md-4 {
   /*background-color: pink;*/
